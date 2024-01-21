@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel ="stylesheet" href="myStyleSheet.css">
+	<title> Samples</title>
+</head>
+<body style="background-color:Crimson">
+<img src="clarion.png" alt="Radio Hub Icon" width="128" height="128">
+<img id="right" src="clarion.png" alt="Radio Hub Icon" width="128" height="128">
+<h1> Welcome to the Sampling Radio!</h1>
+<audio src ="" controls id="audioPlayer" >
+Your browser is incompatible with html5.
+	</audio>
+	<ul id="playlist">
+		<li><a href= "music/Sampling/A Tribe Called Quest  Electric Relaxation instrumental.mp3">
+		A Tribe Called Quest  Electric Relaxation instrumental</a></li>
+		<li><a href= "music/Sampling/A Tribe Called Quest  Footprints Instrumental.mp3">
+		A Tribe Called Quest  Footprints Instrumental </a></li>
+		<li><a href= "music/Sampling/Aphex Twin  Xtal HQ.mp3">
+		Aphex Twin  Xtal</a></li>
+		<li><a href= "music/Sampling/Coffin Nails.mp3">
+		Coffin Nails Metal Fingers</a></li>
+		<li><a href= "music/Sampling/Daft Punk  Face to Face Official audio.mp3">
+		Daft Punk  Face to Face</a></li>
+		<li><a href= "music/Sampling/Daft Punk  Harder Better Faster Stronger Official audio.mp3">
+		Daft Punk  Harder Better Faster Stronger</a></li>
+		<li><a href= "music/Sampling/Fazers.mp3">
+		Fazers King Geedorah</a></li>
+		<li><a href= "music/Sampling/Mac DeMarco  Chamber Of Reflection Official Instrumental.mp3">
+		Mac DeMarco  Chamber Of Reflection Instrumental</a></li>
+		<li><a href= "music/Sampling/Madvillian  Raid Instrumental.mp3">
+		Madvillian  Raid Instrumental</a></li>
+		<li><a href= "music/Sampling/Nas  The World Is Yours Instrumental.mp3">
+		Nas  The World Is Yours Instrumental</a></li>
+		<li><a href= "music/Sampling/Nujabes  Counting Stars.mp3">
+		Nujabes  Counting Stars</a></li>
+		<li><a href= "music/Sampling/Nujabes  Sea of Cloud.mp3">
+		Nujabes  Sea of Cloud</a></li>
+		<li><a href= "music/Sampling/the 27 club Instrumental.mp3">
+		JPEGMAFIA the 27 club Instrumental</a></li>
+		<li><a href= "music/Sampling/The Alchemist  E Coli Instrumental.mp3">
+		The Alchemist  E Coli Instrumental</a></li>
+		<li><a href= "music/Sampling/The Avalanches  electricity.mp3">
+		The Avalanches  Electricity</a></li>
+		<li><a href= "music/Sampling/Wont Do Instrumental.mp3">
+		J Dilla Wont Do Instrumental</a></li>
+		<li><a href= "music/Sampling/WuTang Clan  CREAM.mp3">
+		WuTang Clan  C.R.E.A.M.</a></li>
+	</ul>
+	
+	<a href="#" onclick="playlist.prevTrack();">Prev Track</a>
+    <a href="#" onclick="playlist.nextTrack();">Next Track</a>
+    <a href="#" onclick="playlist.toggleShuffle();">Toggle Shuffle</a>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="audioPlayer.js">	</script>
+    <script>
+	        
+        /*
+    Default constructor configuration:
+        autoplay: false,
+        shuffle: false,
+        loop: false,
+        playerId: "audioPlayer",
+        playlistId: "playlist",
+        currentClass: "current-song"
+        
+        
+*/
+        
+        // loads the audio player
+        var config = {
+          autoplay: true, 
+            loop: true,
+            shuffle: true
+        };
+        var playlist = new AudioPlaylist(config);
+        
+    </script>
+</body>
+</html>

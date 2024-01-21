@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel ="stylesheet" href="myStyleSheet.css">
+	<title> Classic Pop</title>
+<body style="background-color:Tomato">
+</head>
+<img src="clarion.png" alt="Radio Hub Icon" width="128" height="128">
+<img id="right" src="clarion.png" alt="Radio Hub Icon" width="128" height="128">
+<h1> Welcome to the Classic Pop Radio!</h1>
+<audio src ="" controls id="audioPlayer" >
+Your browser is incompatible with html5.
+	</audio>
+	<ul id="playlist">
+		<li><a href= "music/classic pop/Beach Boys I get Around.mp3">
+		Beach Boys I get Around</a></li>
+		<li><a href= "music/classic pop/Fly Me To The Moon 2008 Remastered.mp3">
+		Fly Me To The Moon </a></li>
+		<li><a href= "music/classic pop/Happy Together  The Turtles 1967.mp3">
+		Happy Together  The Turtles</a></li>
+		<li><a href= "music/classic pop/Hit the road Jack.mp3">
+		Hit the road Jack Ray Charles</a></li>
+		<li><a href= "music/classic pop/James Brown  I Feel Good.mp3">
+		James Brown  I Feel Good</a></li>
+		<li><a href= "music/classic pop/Johnny B Goode.mp3">
+		Johnny B Goode Chuck Berry</a></li>
+		<li><a href= "music/classic pop/Layla.mp3">
+		Layla Cream</a></li>
+		<li><a href= "music/classic pop/Moon River  Andy Williams.mp3">
+		Moon River  Andy Williams</a></li>
+		<li><a href= "music/classic pop/No Particular Place To Go.mp3">
+		No Particular Place To Go Chuck Berry</a></li>
+		<li><a href= "music/classic pop/Ray Charles  I got a woman.mp3">
+		Ray Charles  I got a woman</a></li>
+		<li><a href= "music/classic pop/She Loves You Remastered 2009.mp3">
+		She Loves You The Beatles</a></li>
+		<li><a href= "music/classic pop/Sunshine Of Your Love.mp3">
+		Sunshine Of Your Love Cream</a></li>
+		<li><a href= "music/classic pop/The Beatles  I Want To Hold Your HandHD.mp3">
+		The Beatles  I Want To Hold Your Hand</a></li>
+		<li><a href= "music/classic pop/The Byrds  Turn Turn Turn.mp3">
+		The Byrds  Turn Turn Turn</a></li>
+		<li><a href= "music/classic pop/The Jimi Hendrix Experience  All Along The Watchtower Audio.mp3">
+		The Jimi Hendrix Experience  All Along The Watchtower</a></li>
+		<li><a href= "music/classic pop/The Jimi Hendrix Experience  Purple Haze Audio.mp3">
+		The Jimi Hendrix Experience  Purple Haze</a></li>
+		<li><a href= "music/classic pop/Wouldnt It Be Nice Remastered.mp3">
+		Wouldnt It Be Nice Beach Boys</a></li>
+	</ul>
+	
+	<a href="#" onclick="playlist.prevTrack();">Prev Track</a>
+    <a href="#" onclick="playlist.nextTrack();">Next Track</a>
+    <a href="#" onclick="playlist.toggleShuffle();">Toggle Shuffle</a>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="audioPlayer.js">	</script>
+    <script>
+	        
+        /*
+    Default constructor configuration:
+        autoplay: false,
+        shuffle: false,
+        loop: false,
+        playerId: "audioPlayer",
+        playlistId: "playlist",
+        currentClass: "current-song"
+        
+        
+*/
+        
+        // loads the audio player
+        var config = {
+          autoplay: true, 
+            loop: true,
+            shuffle: true
+        };
+        var playlist = new AudioPlaylist(config);
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel ="stylesheet" href="myStyleSheet.css">
+	<title> Synth</title>
+</head>
+<body style="background-color:Cyan">
+<img src="clarion.png" alt="Radio Hub Icon" width="128" height="128">
+<img id="right" src="clarion.png" alt="Radio Hub Icon" width="128" height="128">
+<h1> Welcome to the Synth Radio!</h1>
+<audio src ="" controls id="audioPlayer" >
+Your browser is incompatible with html5.
+	</audio>
+	<ul id="playlist">
+		<li><a href= "music/Synth/Benny Smiles  Hotline Miami Theme Hotline Miami 2 OST.mp3">
+		Benny Smiles Hotline Miami</a></li>
+		<li><a href= "music/Synth/Daft Punk Derezzed OFFICIAL TRACKFULL SONGHQ2010TRON SOUNDTRACK.mp3">
+		Daft Punk Derezzed </a></li>
+		<li><a href= "music/Synth/Island In Space.mp3">
+		Island In Space Jean Jacques Perry</a></li>
+		<li><a href= "music/Synth/Mister James Bond.mp3">
+		Mister James Bond Jean Jacques Perry</a></li>
+		<li><a href= "music/Synth/The Little Ships  Jean Jacques Perrey.mp3">
+		The Little Ships  Jean Jacques Perrey</a></li>
+		<li><a href= "music/Synth/The Mexican Cactus.mp3">
+		The Mexican Cactus Jean Jacques Perrey</a></li>
+		<li><a href= "music/Synth/The Son of Flynn From TRON LegacyScore.mp3">
+		The Son of Flynn TRON Legacy</a></li>
+		<li><a href= "music/Synth/Oscillations.mp3">
+		Oscillations Silver Apples</a></li>
+		<li><a href= "music/Synth/Roland JP8000 demo Tron ScherzoWendy Carlos cover version.mp3">
+		Tron Scherzo Wendy Carlos</a></li>
+	</ul>
+	
+	<a href="#" onclick="playlist.prevTrack();">Prev Track</a>
+    <a href="#" onclick="playlist.nextTrack();">Next Track</a>
+    <a href="#" onclick="playlist.toggleShuffle();">Toggle Shuffle</a>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="audioPlayer.js">	</script>
+    <script>
+	        
+        /*
+    Default constructor configuration:
+        autoplay: false,
+        shuffle: false,
+        loop: false,
+        playerId: "audioPlayer",
+        playlistId: "playlist",
+        currentClass: "current-song"
+        
+        
+*/
+        
+        // loads the audio player
+        var config = {
+          autoplay: true, 
+            loop: true,
+            shuffle: true
+        };
+        var playlist = new AudioPlaylist(config);
+        
+    </script>
+</body>
+</html>

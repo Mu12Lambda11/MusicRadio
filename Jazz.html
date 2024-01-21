@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel ="stylesheet" href="myStyleSheet.css">
+	<title> Jazz</title>
+</head>
+<body style="background-color:Chocolate">
+<img src="clarion.png" alt="Radio Hub Icon" width="128" height="128">
+<img id="right" src="clarion.png" alt="Radio Hub Icon" width="128" height="128">
+<h1> Welcome to the Jazz Radio!</h1>
+<audio src ="" controls id="audioPlayer" >
+Your browser is incompatible with html5.
+	</audio>
+	<ul id="playlist">
+		<li><a href= "music/jazz/Art Tatum  Yesterdays.mp3">
+		Art Tatum  Yesterdays</a></li>
+		<li><a href= "music/jazz/Ahmad Jamal  April In Paris 1966 Jazz.mp3">
+		Ahmad Jamal  April In Paris</a></li>
+		<li><a href= "music/jazz/Billie Holiday All of Me.mp3">
+		Billie Holiday All of Me</a></li>
+		<li><a href= "music/jazz/Charlie ParkerLover Man.mp3">
+		Charlie Parker Lover Man</a></li>
+		<li><a href= "music/jazz/Dizzy Gillespie  Salt Peanuts.mp3">
+		Dizzy Gillespie  Salt Peanuts</a></li>
+		<li><a href= "music/jazz/Django Reinhardt  Minor Swing  HD 1080p.mp3">
+		Django Reinhardt  Minor Swing</a></li>
+		<li><a href= "music/jazz/Giant Steps.mp3">
+		Giant Steps</a></li>
+		<li><a href= "music/jazz/La vie en rose  Louis Armstrong.mp3">
+		La vie en rose  Louis Armstrong</a></li>
+		<li><a href= "music/jazz/Over the Rainbow 1953 by Art Tatum.mp3">
+		Over the Rainbow Art Tatum</a></li>
+		<li><a href= "music/jazz/Skullgirls OST 25  In A Moments Time.mp3">
+		Skullgirls OST In A Moments Time</a></li>
+		<li><a href= "music/jazz/Summertime  Miles Davis 1966.mp3">
+		Summertime  Miles Davis</a></li>
+		<li><a href= "music/jazz/Unfinished Business.mp3">
+		Skullgirls OST Unfinished Business</a></li>
+	</ul>
+	
+	<a href="#" onclick="playlist.prevTrack();">Prev Track</a>
+    <a href="#" onclick="playlist.nextTrack();">Next Track</a>
+    <a href="#" onclick="playlist.toggleShuffle();">Toggle Shuffle</a>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="audioPlayer.js">	</script>
+    <script>
+	        
+        /*
+    Default constructor configuration:
+        autoplay: false,
+        shuffle: false,
+        loop: false,
+        playerId: "audioPlayer",
+        playlistId: "playlist",
+        currentClass: "current-song"
+        
+        
+*/
+        
+        // loads the audio player
+        var config = {
+          autoplay: true, 
+            loop: true,
+            shuffle: true
+        };
+        var playlist = new AudioPlaylist(config);
+        
+    </script>
+</body>
+</html>

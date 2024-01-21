@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel ="stylesheet" href="myStyleSheet.css">
+	<title> Gregorian Chants</title>
+</head>
+<body style="background-color:Teal">
+<img src="clarion.png" alt="Radio Hub Icon" width="128" height="128">
+<img id="right" src="clarion.png" alt="Radio Hub Icon" width="128" height="128">
+<h1> Welcome to the Gregorian Chant Radio!</h1>
+<audio src ="" controls id="audioPlayer" >
+Your browser is incompatible with html5.
+	</audio>
+	<ul id="playlist">
+		<li><a href= "music/gregorian chants/Anima Christi.mp3">
+		Anima Christi</a></li>
+		<li><a href= "music/gregorian chants/Castlevania Symphony of the Night music  Prayer.mp3">
+		SOTN Prayer</a></li>
+		<li><a href= "music/gregorian chants/Dominus Illuminatio Mea  Catholic Gregorian Chant Songs.mp3">
+		Dominus Illuminatio Mea</a></li>
+		<li><a href= "music/gregorian chants/Gregorian chant  Deum verum.mp3">
+		Deum verum</a></li>
+		<li><a href= "music/gregorian chants/In The Dark Night.mp3">
+		In The Dark Night</a></li>
+		<li><a href= "music/gregorian chants/Lumen ad Revelationem  Catholic Songs Gregorian Chant.mp3">
+		Lumen ad Revelationem</a></li>
+		<li><a href= "music/gregorian chants/O croce fedele.mp3">
+		O croce fedele</a></li>
+		<li><a href= "music/gregorian chants/Salve Regina  Gregorian Chant.mp3">
+		Salve Regina</a></li>
+		<li><a href= "music/gregorian chants/Schola_Gregoriana-Ave_Maria.ogg">
+		Ave Maria</a></li>
+		<li><a href= "music/gregorian chants/Libera me Domine Deliver me O Lord  Gregorian Chant from the Requiem Funeral Mass.mp3">
+		Libera me Domine</a></li>
+	</ul>
+	
+	<a href="#" onclick="playlist.prevTrack();">Prev Track</a>
+    <a href="#" onclick="playlist.nextTrack();">Next Track</a>
+    <a href="#" onclick="playlist.toggleShuffle();">Toggle Shuffle</a>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="audioPlayer.js">	</script>
+    <script>
+	        
+        /*
+    Default constructor configuration:
+        autoplay: false,
+        shuffle: false,
+        loop: false,
+        playerId: "audioPlayer",
+        playlistId: "playlist",
+        currentClass: "current-song"
+        
+        
+*/
+        
+        // loads the audio player
+        var config = {
+          autoplay: true, 
+            loop: true,
+            shuffle: true
+        };
+        var playlist = new AudioPlaylist(config);
+        
+    </script>
+</body>
+</html>

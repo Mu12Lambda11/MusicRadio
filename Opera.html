@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel ="stylesheet" href="myStyleSheet.css">
+	<title> Opera and Classical Music</title>
+</head>
+<body style="background-color:DodgerBlue">
+<img src="clarion.png" alt="Radio Hub Icon" width="128" height="128">
+<img id="right" src="clarion.png" alt="Radio Hub Icon" width="128" height="128">
+<h1> Welcome to the Classical and Opera Radio!</h1>
+<audio src ="" controls id="audioPlayer" >
+Your browser is incompatible with html5.
+	</audio>
+	<ul id="playlist">
+		<li><a href= "music/opera/BRUCE XIAOYU LIU  Etude in C sharp minor Op 10 No 4 18th Chopin Competition first stage.mp3">
+		BRUCE XIAOYU LIU  Etude in C sharp minor Op 10 No 4 18th</a></li>
+		<li><a href= "music/opera/Debussy Claire de lune  hrSinfonieorchester  JeanChristophe Spinosi.mp3">
+		Claire de Lune</a></li>
+		<li><a href= "music/opera/Dvorak  Symphony No 9 From the New World Mvmt 4.mp3">
+		Dvorak  Symphony No 9 From the New World Mvmt 4</a></li>
+		<li><a href= "music/opera/Johann Strauss II  Die Fledermaus Overture.mp3">
+		Johann Strauss II  Die Fledermaus Overture</a></li>
+		<li><a href= "music/opera/Leo Delibes  The Flower Duet HQ.mp3">
+		Leo Delibes  The Flower Duet</a></li>
+		<li><a href= "music/opera/Luciano Pavarotti  La Donna  Mobile Rigoletto.mp3">
+		Luciano Pavarotti  La Donna  Mobile Rigoletto</a></li>
+		<li><a href= "music/opera/Mara Callas  Puccini  Vissi darte  Tosca.mp3">
+		Mara Callas  Puccini  Vissi darte  Tosca</a></li>
+		<li><a href= "music/opera/Puccini  Turandot Nessun Dorma HQ.mp3">
+		Puccini  Turandot Nessun Dorma</a></li>
+		<li><a href= "music/opera/Rossini  The Barber of Seville Largo Al Factotum Figaro HQ.mp3">
+		Rossini  The Barber of Seville Largo Al Factotum Figaro</a></li>
+		<li><a href= "music/opera/The Magic Flute  Queen of the Night aria Mozart Diana Damrau The Royal Opera.mp3">
+		The Magic Flute - Queen of the Night</a></li>
+		<li><a href= "music/opera/Yuja WangJoshua Bell Beethoven kreutzer 3rd movement.mp3">
+		Wang and Bell - Beethoven Kreutzer 3rd movement</a></li>
+	</ul>
+	
+	<a href="#" onclick="playlist.prevTrack();">Prev Track</a>
+    <a href="#" onclick="playlist.nextTrack();">Next Track</a>
+    <a href="#" onclick="playlist.toggleShuffle();">Toggle Shuffle</a>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="audioPlayer.js">	</script>
+    <script>
+	        
+        /*
+    Default constructor configuration:
+        autoplay: false,
+        shuffle: false,
+        loop: false,
+        playerId: "audioPlayer",
+        playlistId: "playlist",
+        currentClass: "current-song"
+        
+        
+*/
+        
+        // loads the audio player
+        var config = {
+          autoplay: true, 
+            loop: true,
+            shuffle: true
+        };
+        var playlist = new AudioPlaylist(config);
+        
+    </script>
+</body>
+</html>
